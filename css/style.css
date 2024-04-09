@@ -1,6 +1,7 @@
 .grid-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(50px, auto);
 }
 
 .red{
@@ -14,6 +15,11 @@
 .green{
     background-color: green;
 }
+
+.rh1 {grid-row: span 1;}
+.rh2 {grid-row: span 2;}
+.rh3 {grid-row: span 3;}
+.rh4 {grid-row: span 4;}
 
 .xs1 { grid-column: span 1;}
 .xs2 { grid-column: span 2;}
@@ -56,3 +62,30 @@
 .md11 { grid-column: span 11;}
 .md12 { grid-column: span 12;}
 }
+@media (min-width: 992px) {
+.lg1 { grid-column: span 1;}
+.lg2 { grid-column: span 2;}
+.lg3 { grid-column: span 3;}
+.lg4 { grid-column: span 4;}
+.lg5 { grid-column: span 5;}
+.lg6 { grid-column: span 6;}
+.lg7 { grid-column: span 7;}
+.lg8 { grid-column: span 8;}
+.lg9 { grid-column: span 9;}
+.lg10 { grid-column: span 10;}
+.lg11 { grid-column: span 11;}
+.lg12 { grid-column: span 12;}
+}
+@media (max-width: 1199.98px) {
+.xl1 { grid-column: span 1;}
+.xl2 { grid-column: span 2;}
+.xl3 { grid-column: span 3;}
+.xl4 { grid-column: span 4;}
+.xl5 { grid-column: span 5;}
+.xl6 { grid-column: span 6;}
+.xl7 { grid-column: span 7;}
+.xl8 { grid-column: span 8;}
+.xl9 { grid-column: span 9;}
+.xl10 { grid-column: span 10;}
+.xl11 { grid-column: span 11;}
+.xl12 { grid-column: span 12;}}
